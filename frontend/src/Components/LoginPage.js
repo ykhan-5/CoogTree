@@ -44,7 +44,7 @@ const LoginPage = () => {
                 <div className="loginFormForm">
                     <Button type="submit">Login</Button>
                     <p> No account?
-                      <a href="http://localhost:3000/signup"> signup here...</a>
+                      <a href="http://localhost:3000/signup">Signup Here</a>
                   </p>
                 </div>
             </Form>

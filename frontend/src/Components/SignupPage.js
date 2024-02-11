@@ -59,7 +59,7 @@ const SignupPage = () => {
                 <div className="loginFormForm">
                     <Button type="submit">Create Account</Button>
                     <p> Already signed up?
-                      <a href="http://localhost:3000/login"> Login here...</a>
+                      <a href="http://localhost:3000/login">Login Here</a>
                   </p>
                 </div>
             </Form>
