@@ -9,8 +9,8 @@ const CoogNav = () => {
         <Navbar.Brand>CoogTree</Navbar.Brand>
         <Nav className="justify-content-end">
           <Row>
-            <Col><Nav.Item><a href='http://localhost:3000/login'><Button>Login</Button></a></Nav.Item></Col>
-            <Col className="ml-auto"><Nav.Item><a href='http://localhost:3000/signup'><Button>Signup</Button></a></Nav.Item></Col>          
+            <Col><Nav.Item><a href='/login'><Button>Login</Button></a></Nav.Item></Col>
+            <Col className="ml-auto"><Nav.Item><a href='/signup'><Button>Signup</Button></a></Nav.Item></Col>          
           </Row>
         </Nav>      
       </Navbar> 
