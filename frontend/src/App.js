@@ -1,7 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import LoginPage from "./Components/LoginPage";
+import CoogNav from "./Components/CoogNav";
 // import Chart from "./Components/Chart";
 
 import {
@@ -12,7 +11,7 @@ import CoogTreeRouter from './CoogTreeRouter';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <CoogNav />
       <RouterProvider router={CoogTreeRouter} />
       {/* <Chart /> */}
     </div>
