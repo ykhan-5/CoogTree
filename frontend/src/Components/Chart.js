@@ -1,23 +1,23 @@
-// import React, { useEffect } from "react";
-// import define from "MapData/13ff3c0e37435870/runtime.js";
-// import { Runtime, Inspector } from "./MapData/13ff3c0e37435870/runtime.js";
+import React from "react";
 
-// const Chart = () => {
-//   useEffect(() => {
-//     const runtime = new Runtime();
-//     const main = runtime.module(define, Inspector.into(document.body));
+class HTMLFileRenderer extends React.Component {
+  render() {
+    // HTML content to be rendered
+    const htmlContent = `
+    <body>
+    <script type="module">
+      import define from "./mapindex.js";
+      import { Runtime, Library, Inspector } from "./MapData/mapFiles/runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.body));
+    </script>
+  </body>
+  
+    `;
 
-//     // Clean up function to remove the module when the component unmounts
-//     return () => {
-//       main.dispose();
-//     };
-//   }, []);
+    return <div dangerouslySetInnerHTML={{ __html: htmlContent }} />;
+  }
+}
 
-//   return (
-//     <div>
-//       <h1>Hello</h1>
-//     </div>
-//   );
-// };
-
-// export default Chart;
+export default HTMLFileRenderer;

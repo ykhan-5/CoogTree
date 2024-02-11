@@ -7,12 +7,12 @@
         {
           "name": "COSC 1336",
           "value": 3534,
-          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+          "children": [{ "name": "Nouhad Rizk", "value": 3534 }]
         },
         {
-          "name": "MATH 2000",
+          "name": "COSC 1410",
           "value": 3534,
-          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+          "children": [{ "name": "Dan Belinger", "value": 3534 }]
         }
       ]
     },
@@ -24,8 +24,8 @@
           "children": [{ "name": "Professor Rizk", "value": 3534 }]
         },
         {
-          "name": "MATH 3000",
-          "children": [{ "name": "Professor May", "value": 3534 }]
+          "name": "COSC 2410",
+          "children": [{ "name": "Pranav Mantini", "value": 3534 }]
         }
       ]
     },
@@ -35,12 +35,12 @@
         {
           "name": "COSC 2436",
           "value": 3534,
-          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+          "children": [{ "name": "Nouhad Rizk", "value": 3534 }]
         },
         {
-          "name": "COSC 2025",
+          "name": "COSC 2425",
           "value": 3534,
-          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+          "children": [{ "name": "Pranav Mantini", "value": 3534 }]
         }
       ]
     },
@@ -48,14 +48,14 @@
       "name": "Spring 24",
       "children": [
         {
-          "name": "COSC 1336",
+          "name": "COSC 3360",
           "value": 3534,
-          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+          "children": [{ "name": "Carlos Rincon", "value": 3534 }]
         },
         {
-          "name": "MATH 2000",
+          "name": "COSC 3380",
           "value": 3534,
-          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+          "children": [{ "name": "Uma Rasmarathy", "value": 3534 }]
         }
       ]
     }

@@ -19,3 +19,8 @@
 .App {
   /* background-color: rgb(198, 204, 255); */
 }
+
+.class-container {
+  display: flex;
+  align-items: center;
+}

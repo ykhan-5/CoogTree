@@ -5,10 +5,6 @@ function _data(FileAttachment) {
 function _2(md) {
   return md`
 <div style="color: grey; font: 13px/25.5px var(--sans-serif); text-transform: uppercase;"><h1 style="display: none;">Zoomable circle packing</h1><a href="https://d3js.org/">D3</a> › <a href="/@d3/gallery">Gallery</a></div>
-
-# Zoomable circle packing
-
-Click to zoom in or out.
   `;
 }
 
