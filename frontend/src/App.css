@@ -1,0 +1,13 @@
+.navb {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nav-item-right {
+  padding-left: 1250px;
+}
+
+.signup {
+  padding-top: 45px;
+}

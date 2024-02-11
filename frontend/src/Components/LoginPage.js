@@ -1,17 +1,16 @@
-import React, {useState} from 'react'
-import { Form, Button, Card } from 'react-bootstrap'
-import '../css/bootstrap.min.css';
-import Cookies from 'universal-cookie';
-import { useNavigate } from 'react-router';
+import React, { useState } from "react";
+import { Form, Button, Card } from "react-bootstrap";
+import "../css/bootstrap.min.css";
+import Cookies from "universal-cookie";
+import { useNavigate } from "react-router";
 
 const cookie = new Cookies();
 
 const LoginPage = () => {
-
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -21,51 +20,57 @@ const LoginPage = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "email": email,
-        "password": password
-      })
-    })
-    .then(i => {
+        email: email,
+        password: password,
+      }),
+    }).then((i) => {
       if (i.status == 200) {
-        cookie.set('email', email)
-        cookie.set('authed', true)
+        cookie.set("email", email);
+        cookie.set("authed", true);
         navigate("/");
       }
-    })
-  }
+    });
+  };
 
   return (
-    <div> 
-      <Card className='loginForm'>
+    <div className="signup">
+      <Card className="loginForm">
         <Card.Body>
-            <Form onSubmit={handleLogin}>
-                <h3 style={{"text-align": "center"}}>Login</h3>
-                <div className='loginFormForm'>
-                  <Form.Group>
-                      <Form.Label>
-                          Username:
-                      </Form.Label> 
-                      <Form.Control type="text" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                  </Form.Group>
-                  <Form.Group>
-                      <Form.Label>
-                          Password:
-                      </Form.Label>
-                      <Form.Control type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                  </Form.Group>
-                </div>
-                <div className="loginFormForm">
-                    <Button type="submit">Login</Button>
-                    <p> No account?
-                      <a href="http://localhost:3000/signup">Signup Here</a>
-                  </p>
-                </div>
-            </Form>
-
-          </Card.Body>
+          <Form onSubmit={handleLogin}>
+            <h3 style={{ "text-align": "center" }}>Login</h3>
+            <div className="loginFormForm">
+              <Form.Group>
+                <Form.Label>Username:</Form.Label>
+                <Form.Control
+                  type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </Form.Group>
+              <Form.Group>
+                <Form.Label>Password:</Form.Label>
+                <Form.Control
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </Form.Group>
+            </div>
+            <div className="loginFormForm">
+              <Button type="submit">Login</Button>
+              <p>
+                {" "}
+                No account?
+                <a href="http://localhost:3000/signup">Signup Here</a>
+              </p>
+            </div>
+          </Form>
+        </Card.Body>
       </Card>
     </div>
-  )
-}
+  );
+};
 
-export default LoginPage
+export default LoginPage;
