@@ -65,13 +65,16 @@ const SignupPage = () => {
                 />
               </Form.Group>
             </div>
-            <div className="loginFormForm">
-              <Button type="submit">Create Account</Button>
-              <p>
-                {" "}
-                Already signed up?
-                <a href="http://localhost:3000/login">Login Here</a>
-              </p>
+            <div className="button">
+              <div className="loginFormForm">
+                <Button type="submit">Create Account</Button>
+
+                <p>
+                  {" "}
+                  Already signed up?&nbsp;
+                  <a href="http://localhost:3000/login">Login Here</a>
+                </p>
+              </div>
             </div>
           </Form>
         </Card.Body>
