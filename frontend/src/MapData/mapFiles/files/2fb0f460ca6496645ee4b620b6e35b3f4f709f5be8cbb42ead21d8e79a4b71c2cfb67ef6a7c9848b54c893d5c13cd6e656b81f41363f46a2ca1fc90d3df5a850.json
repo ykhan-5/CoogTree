@@ -1,0 +1,63 @@
+{
+  "name": "",
+  "children": [
+    {
+      "name": "Fall 22",
+      "children": [
+        {
+          "name": "COSC 1336",
+          "value": 3534,
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        },
+        {
+          "name": "MATH 2000",
+          "value": 3534,
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        }
+      ]
+    },
+    {
+      "name": "Spring 23",
+      "children": [
+        {
+          "name": "COSC 1437",
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        },
+        {
+          "name": "MATH 3000",
+          "children": [{ "name": "Professor May", "value": 3534 }]
+        }
+      ]
+    },
+    {
+      "name": "Fall 23",
+      "children": [
+        {
+          "name": "COSC 2436",
+          "value": 3534,
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        },
+        {
+          "name": "COSC 2025",
+          "value": 3534,
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        }
+      ]
+    },
+    {
+      "name": "Spring 24",
+      "children": [
+        {
+          "name": "COSC 1336",
+          "value": 3534,
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        },
+        {
+          "name": "MATH 2000",
+          "value": 3534,
+          "children": [{ "name": "Professor Rizk", "value": 3534 }]
+        }
+      ]
+    }
+  ]
+}
