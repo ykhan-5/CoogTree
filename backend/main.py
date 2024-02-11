@@ -2,12 +2,15 @@ from flask import Flask, request, Response, jsonify
 from dotenv import load_dotenv
 from pymongo import MongoClient
 from operator import itemgetter
+from flask_cors import CORS, cross_origin
 import os 
 
 load_dotenv()
 app = Flask(__name__)
 client = MongoClient(os.getenv("MONGO_URI"))
+cors = CORS(app)
 coogtreedb = client.get_database("coogsdb")
+
 
 optional_fields = lambda field, data : data[field] if field in data else ""  
 
@@ -42,7 +45,7 @@ def login():
         "email": email,
     })
     if user and user["password"] == password: 
-            return Response("Successfully Logged In", status=400) 
+            return Response("Successfully Logged In", status=200) 
     return Response("Incorrect username or password", status=400)  
 
 @app.route("/setinfo", methods=["POST"])
