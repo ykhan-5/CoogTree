@@ -2,7 +2,14 @@ import React from 'react'
 
 const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+    <div>
+      <h2>
+        Your email
+        Your password
+      </h2>
+
+
+    </div>
   )
 }
 
