@@ -1,11 +1,15 @@
 import React, {useEffect} from 'react'
-import { Form, InputGroup, Card } from 'react-bootstrap'
+import { Form, InputGroup, Card, Button } from 'react-bootstrap'
 import Cookies from 'universal-cookie';
 import { useNavigate } from 'react-router';
 
 const ClassAdd = () => {
     const navigate = useNavigate();
-    const cookie = new Cookies();
+    const cookie = new Cookies();   
+
+    const handleClassAdd = () => {
+        
+    }
 
     useEffect(() => {
         if (!cookie.get("authed")) {
