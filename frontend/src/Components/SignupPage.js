@@ -47,7 +47,7 @@ const SignupPage = () => {
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label>Username:</Form.Label>
+                <Form.Label>Email:</Form.Label>
                 <Form.Control
                   type="text"
                   value={email}

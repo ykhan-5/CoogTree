@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div>
+        <div className="home">
             <h1>Welcome To CoogTree</h1>
         </div>
     )
