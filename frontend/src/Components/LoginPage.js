@@ -1,8 +1,14 @@
 import React, {useState} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
 import '../css/bootstrap.min.css';
+import Cookies from 'universal-cookie';
+import { useNavigate } from 'react-router';
+
+const cookie = new Cookies();
 
 const LoginPage = () => {
+
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
@@ -18,6 +24,13 @@ const LoginPage = () => {
         "email": email,
         "password": password
       })
+    })
+    .then(i => {
+      if (i.status == 200) {
+        cookie.set('email', email)
+        cookie.set('authed', true)
+        navigate("/");
+      }
     })
   }
 

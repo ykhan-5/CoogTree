@@ -1,5 +1,6 @@
 import React from 'react'
 import {Navbar, Nav, Col, Row, Button} from 'react-bootstrap';
+import { useNavigate } from 'react-router';
 
 const CoogNav = () => {
   return (

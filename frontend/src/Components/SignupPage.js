@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
-import '../css/bootstrap.min.css';
-
 const SignupPage = () => {
 
   const [email, setEmail] = useState("");
@@ -9,7 +7,7 @@ const SignupPage = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
-  const handleLogin = async (e) => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
     await fetch("http://127.0.0.1:5000/signup", {
       method: "POST",
@@ -28,7 +26,7 @@ const SignupPage = () => {
     <div> 
       <Card className='loginForm'>
         <Card.Body>
-            <Form onSubmit={handleLogin}>
+            <Form onSubmit={handleSignUp}>
                 <h3 style={{"text-align": "center"}}>Signup</h3>
                 <div className='loginFormForm'>
                     <Form.Group>
