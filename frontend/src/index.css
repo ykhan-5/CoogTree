@@ -19,3 +19,26 @@
   padding: 10px;
 
 }
+
+.profile-picture
+{
+  max-height:350px;
+  max-width:350px;
+  display:block;
+  margin:auto;
+}
+
+.social-media
+{
+  text-align:center;
+}
+
+.social-media * {
+  padding-right: 4px;
+}
+
+.name
+{
+  text-align:center;
+  padding-bottom:5px;
+}

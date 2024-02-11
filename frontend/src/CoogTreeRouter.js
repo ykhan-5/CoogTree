@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import SignupPage from './Components/SignupPage';
 import ClassAdd from './Components/ClassAdd';
 import FindClassmates from './Components/FindClassmates';
+import StudentProfile from './Components/StudentProfile';
 
 
 const CoogTreeRouter = createBrowserRouter([
@@ -23,6 +24,11 @@ const CoogTreeRouter = createBrowserRouter([
         "path": "/getclassmates",
         "element": <FindClassmates />
     }
+    ,
+    {
+        "path": "/profile",
+        "element": <StudentProfile/>
+    },
 ])
 
 export default CoogTreeRouter
